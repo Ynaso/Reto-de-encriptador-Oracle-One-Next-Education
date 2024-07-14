@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: #F3F5FC;  
+    font-family: 'Inter', sans-serif;
+}
+
+.mainContent{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.inputButtonContainer{
+    display: flex;
+    flex-direction: row;
+    outline: none;
+    border: none;
+    
+}
+
+.InputElement{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    width: 100%;
+    font-size: 18px;
+}
+
+.InputElement:focus{
+    outline: none;
+}
+
+.input_btns{
+
+    display: flex;
+    margin-top: 3%;
+    flex-direction: column;
+    gap: 15%;
+    margin-left: 60px;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+.internalButtons{
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 8px;
+    border: 1px solid black;
+    color: darkblue;
+}
+
+.infoGraphicContainer__mensaje{
+    text-align: center;
+    font-family: inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.infoGraphicContainer__submensaje{
+    text-align: center;
+    font-family: inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+
+}
+
+.infoGraphicContainer__boton{
+    position: relative;
+    top: 110px;
+    border-radius: 15px;
+    display: none;
+    border: 1px solid darkblue;
+    padding: 12px 80px;
+    background-color: white;
+    font-family: inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
+
+
+
+.logo{
+    padding-bottom: 16%;
+    width: 60%;
+}
+
+.buttons_field{
+    margin-right: 20px;
+}
+
+#buttons_field_warning{
+    font-size: 13px;
+}
+
+
+.warning{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#EncriptarBtn{
+    background-color: darkblue;
+    color: white;
+    border: none;
+}
+
+#DesencriptarBtn{
+    background-color: #D8DFE8;
+    color: darkblue;
+    border: none;
+    
+}
+
+.infoGraphicContainer{
+    padding: 1.25rem;
+    display: flex;
+    width: 15.75rem; 
+    height: 34.375rem;
+    box-shadow: 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.06); 
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1.3rem;
+    margin-top: -7%;
+    overflow: hidden; 
+    overflow-wrap: break-word; 
+    word-break: break-word; 
+    hyphens: auto; 
+}
+
+.infoGraphic{
+    width: 12.5rem;
+    height: auto;
+}
+
+
+
+
+@media only screen and (max-width: 780px) {
+    
+    .mainContent{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20%;
+        margin-left: -10%;
+    }
+    
+    .inputButtonContainer{
+        display: flex;
+        width: 80%;
+       
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .input_btns{
+
+        display: flex;
+        margin-top: 3%;
+        flex-direction: column;
+        margin-left: 60px;
+        
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logoContainer{
+        width: 40%;
+        margin-left: -50%
+    }
+
+    .InputElement{
+        margin-bottom: 10%;
+        width: 95%;
+    }
+    
+   
+    .infoGraphic{
+        display: none;
+    }
+
+    .infoGraphicContainer {
+        display: flex;
+        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        margin-left: 11%;
+        width: 80%;
+        max-width: 80%;
+        margin-top: 10px;
+        height: auto; /* Permite que la altura se ajuste según el contenido */
+        box-sizing: border-box; /* Incluye el padding en el ancho y alto del contenedor */
+        overflow: hidden; /* Evita que el contenido desborde el contenedor */
+        overflow-wrap: break-word; /* Permite el ajuste de texto en palabras largas */
+        word-break: break-word; /* Fuerza el ajuste de texto para evitar desbordes */
+        hyphens: auto; /* Habilita la separación de palabras con guiones si es necesario */
+    }
+    
+}
