@@ -1,7 +1,8 @@
 const entrada = document.querySelector('.InputElement');
 const botonEncriptar = document.querySelector("#EncriptarBtn");
 const botondesencriptar = document.querySelector("#desencriptarBtn");
-const outputContainer = document.getElementById('outputContainer');
+const outputContainer = document.getElementById('infoGraphicContainer__mensaje');
+const botonCopiar = document.getElementById('infoGraphicContainer__boton');
 
 const PalabrasClave = {
     
@@ -18,6 +19,40 @@ const warning = (warningMessage) =>{
         text: `${warningMessage}`,
       });
 }
+
+const enableCopyButton = ()=>{
+    const grafico = document.getElementById('infoGraphic');
+    const subMensaje = document.getElementById('infoGraphicContainer__submensaje')
+    grafico.style.display = "none";
+    subMensaje.style.display = "none";
+    botonCopiar.style.display = "block";
+
+    
+}
+
+
+const copiarTexto = ()=>{
+   
+    let elemento = document.getElementById('infoGraphicContainer__mensaje');
+    const texto = elemento.innerText || elemento.textContent;
+
+    const range = document.createRange();
+    range.selectNodeContents(elemento);
+    
+    const selection = window.getSelection();
+    
+    selection.removeAllRanges(); 
+    
+    selection.addRange(range); 
+
+    navigator.clipboard.writeText(texto).then(() => {
+        alert('Texto copiado al portapapeles');
+    }).catch(err => {
+        console.error('Error al copiar el texto: ', err);
+    });
+
+}
+
 
 const procesarEntrada = (texto)=>{
   
@@ -53,6 +88,7 @@ const encriptarMensaje = (mensaje) =>{
         })
     
         outputContainer.innerHTML = palabraEncriptada;
+        enableCopyButton();
     }
    
 
@@ -73,6 +109,9 @@ if(procesarEntrada(texto)){
     
     })
     outputContainer.innerHTML =  texto;
+    
+    enableCopyButton();
+    
 }
 
 
@@ -86,3 +125,10 @@ botondesencriptar.addEventListener('click',()=>{
      desencriptarTexto(entrada.value); 
 });
 
+
+botonCopiar.addEventListener('click', ()=>{
+    
+    
+    copiarTexto();
+
+});

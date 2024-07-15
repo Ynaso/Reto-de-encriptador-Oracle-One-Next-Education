@@ -85,7 +85,7 @@ body{
 
 .infoGraphicContainer__boton{
     position: relative;
-    top: 110px;
+    top: 50px;
     border-radius: 15px;
     display: none;
     border: 1px solid darkblue;
@@ -194,7 +194,7 @@ body{
     }
 
     .InputElement{
-        margin-bottom: 10%;
+        margin-bottom: 3%;
         width: 95%;
     }
     
@@ -205,17 +205,21 @@ body{
 
     .infoGraphicContainer {
         display: flex;
-        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        flex-direction: column;
         margin-left: 11%;
         width: 80%;
         max-width: 80%;
         margin-top: 10px;
-        height: auto; /* Permite que la altura se ajuste según el contenido */
-        box-sizing: border-box; /* Incluye el padding en el ancho y alto del contenedor */
-        overflow: hidden; /* Evita que el contenido desborde el contenedor */
-        overflow-wrap: break-word; /* Permite el ajuste de texto en palabras largas */
-        word-break: break-word; /* Fuerza el ajuste de texto para evitar desbordes */
-        hyphens: auto; /* Habilita la separación de palabras con guiones si es necesario */
+        height: auto;
+        box-sizing: border-box;
+        overflow: hidden; 
+        overflow-wrap: break-word; 
+        word-break: break-word; 
+        hyphens: auto; 
+    }
+
+    .infoGraphicContainer__boton{
+        top: 10px;
     }
     
 }
