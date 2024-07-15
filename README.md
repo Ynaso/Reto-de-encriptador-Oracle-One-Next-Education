@@ -1,47 +1,52 @@
-Encriptador y Desencriptador de Mensajes
+Claro, aquí está el README en formato Markdown con los espacios, subtítulos y bullets correspondientes:
+
+---
+
+# Encriptador y Desencriptador de Mensajes
 
 Este proyecto es una aplicación web simple que encripta y desencripta mensajes utilizando un conjunto de palabras clave. Los usuarios pueden ingresar un mensaje y encriptarlo, desencriptarlo o copiar el mensaje encriptado al portapapeles.
 
-Descripción
+## Descripción
+
 La aplicación permite a los usuarios:
 
-Ingresar un mensaje en un campo de texto.
-Encriptar el mensaje usando un conjunto de palabras clave.
+- **Ingresar un mensaje en un campo de texto.**
+- **Encriptar el mensaje usando un conjunto de palabras clave.**
+- **Desencriptar un mensaje encriptado.**
+- **Copiar el mensaje encriptado al portapapeles.**
 
-Desencriptar un mensaje encriptado.
-Copiar el mensaje encriptado al portapapeles.
+## Características
 
-Características
-Encriptación: Convierte vocales en secuencias de caracteres predefinidas.
+- **Encriptación:** Convierte vocales en secuencias de caracteres predefinidas.
+- **Desencriptación:** Convierte las secuencias de caracteres predefinidas de vuelta a las vocales originales.
+- **Validación:** Asegura que el mensaje no contenga mayúsculas ni acentos.
+- **Copiar al Portapapeles:** Permite copiar el mensaje encriptado para usarlo en otros lugares.
 
-Desencriptación: Convierte las secuencias de caracteres predefinidas de vuelta a las vocales originales.
+## Uso
 
-Validación: Asegura que el mensaje no contenga mayúsculas ni acentos.
-Copiar al Portapapeles: Permite copiar el mensaje encriptado para usarlo en otros lugares.
-Uso
+### Instalación
 
-Instalación
-Clona este repositorio o descarga los archivos.
-Abre el archivo index.html en tu navegador web.
+1. Clona este repositorio o descarga los archivos.
+2. Abre el archivo `index.html` en tu navegador web.
 
-Instrucciones
-Ingresar un Mensaje:
+### Instrucciones
 
-Escribe el mensaje que deseas encriptar o desencriptar en el campo de entrada.
-Encriptar Mensaje:
+1. **Ingresar un Mensaje:**
+   - Escribe el mensaje que deseas encriptar o desencriptar en el campo de entrada.
 
-Haz clic en el botón "Encriptar".
-El mensaje encriptado aparecerá en el contenedor de salida.
+2. **Encriptar Mensaje:**
+   - Haz clic en el botón "Encriptar".
+   - El mensaje encriptado aparecerá en el contenedor de salida.
 
-Desencriptar Mensaje:
+3. **Desencriptar Mensaje:**
+   - Escribe o pega el mensaje encriptado en el campo de entrada.
+   - Haz clic en el botón "Desencriptar".
+   - El mensaje desencriptado aparecerá en el contenedor de salida.
 
-Escribe o pega el mensaje encriptado en el campo de entrada.
-Haz clic en el botón "Desencriptar".
+4. **Copiar Mensaje:**
+   - Haz clic en el botón "Copiar".
+   - El mensaje encriptado será copiado al portapapeles.
 
-El mensaje desencriptado aparecerá en el contenedor de salida.
-Copiar Mensaje:
+---
 
-Haz clic en el botón "Copiar".
-El mensaje encriptado será copiado al portapapeles.
-
-Esta es la forma en la que podemos utilizar el encriptador :)
+Este README proporciona una guía paso a paso para usar la aplicación, destacando las funciones principales y cómo interactuar con ellas.
