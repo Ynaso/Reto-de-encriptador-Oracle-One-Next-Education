@@ -1,7 +1,3 @@
-Claro, aquí está el README en formato Markdown con los espacios, subtítulos y bullets correspondientes:
-
----
-
 # Encriptador y Desencriptador de Mensajes
 
 Este proyecto es una aplicación web simple que encripta y desencripta mensajes utilizando un conjunto de palabras clave. Los usuarios pueden ingresar un mensaje y encriptarlo, desencriptarlo o copiar el mensaje encriptado al portapapeles.
